@@ -7,7 +7,7 @@ JOBS = [
         'id': 1,
         'title': 'Data Analyst',
         'location': 'Cluj-Napoca, Romania',
-        'salary': 'EUR 1500',
+        'salary': 'EUR 1700',
     },
     {
         'id': 2,
