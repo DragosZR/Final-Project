@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Python Careers</title>
+    <title>TechLand Careers</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
@@ -14,20 +14,27 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="text-center mt-2 mb-4">Python Careers</h1>
+      <h1 class="text-center mt-2 mb-4">
+        {{company_name}} Careers</h1>
       <img class="img-fluid" id="banner" src="static/banner.jpg">
-      <h2 class="text-center mt-2 mb-4">About Python</h2>
+      <h2 class="text-center mt-2 mb-4">About Us</h2>
       <p class="lead">
-          Python has become one of the most popular programming languages in recent years, and for good reason. Its simplicity, readability, and versatility make it a joy to work with, whether you're a seasoned developer or just starting out.
-        With Python, you can build anything from web applications and data analysis tools to machine learning models and automation scripts.
-        Its vast library of modules and packages makes it easy to find solutions to almost any problem you encounter, while its large community of developers means you'll never be short of help or inspiration.
-        Whether you're looking to jumpstart your career or take it to the next level, Python is a language that's sure to open up new opportunities and possibilities.
+         <p>
+            TechLand is a dynamic and fast-growing technology company that specializes in developing innovative software solutions for businesses of all sizes. Our team of experienced developers, designers, and project managers work together to create software that not only meets the needs of our clients, but also challenges the limits of what's possible with technology.
+            At TechLand, we're passionate about fostering a culture of innovation, collaboration, and growth. We believe in investing in our employees and providing them with the tools and resources they need to succeed. From training and mentorship programs to cutting-edge technology and a supportive work environment, we're committed to helping our employees thrive.
+            We're always looking for talented and ambitious individuals to join our team. If you're looking for a challenging and rewarding career in technology, TechLand is the place for you. Whether you're an experienced professional or just starting out, we have opportunities for you to grow and advance your career.
+            As a member of the TechLand team, you'll work on exciting projects that push the boundaries of what's possible with technology. You'll collaborate with a diverse group of individuals who share your passion for innovation and excellence. And you'll have access to resources and support that will help you develop your skills and achieve your career goals.
+            If you're ready to take your career to the next level, we invite you to join us at TechLand. Check out our current job openings and apply today.
       </p>
       <h2 class="text-center mt-2 mb-4">Open Positions</h2>
-      <p>TODO - Shows the jobs here</p>
+      <div>
+        {% for job in jobs %}
+          {% include 'job_item.html' %}
+        {% endfor %}
+      </div>
       <div class="text-center">
         <button class="btn btn-primary btn-lg">Contact</button>
-          <p class="mt-4">Copyright 2022, Python Careers</p>
+          <p class="mt-4">Copyright 2022, TechLand</p>
       </div>
     </div>
   </body>
