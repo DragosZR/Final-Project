@@ -9,23 +9,31 @@
         height: 360px;
         width: 100%;
         object-fit: cover;
+        margin-bottom: 16px;
       }
     </style>
   </head>
   <body>
+    {% include 'nav.html' %}
+    <img class="img-fluid" id="banner" src="static/banner.jpg">
     <div class="container">
       <h1 class="text-center mt-2 mb-4">
-        {{company_name}} Careers</h1>
-      <img class="img-fluid" id="banner" src="static/banner.jpg">
-      <h2 class="text-center mt-2 mb-4">About Us</h2>
+        {{company_name}} Careers
+      </h1>
+      <div class="row">
+        <div class="col-md-6">
       <p class="lead">
-         <p>
-            TechLand is a dynamic and fast-growing technology company that specializes in developing innovative software solutions for businesses of all sizes. Our team of experienced developers, designers, and project managers work together to create software that not only meets the needs of our clients, but also challenges the limits of what's possible with technology.
-            At TechLand, we're passionate about fostering a culture of innovation, collaboration, and growth. We believe in investing in our employees and providing them with the tools and resources they need to succeed. From training and mentorship programs to cutting-edge technology and a supportive work environment, we're committed to helping our employees thrive.
-            We're always looking for talented and ambitious individuals to join our team. If you're looking for a challenging and rewarding career in technology, TechLand is the place for you. Whether you're an experienced professional or just starting out, we have opportunities for you to grow and advance your career.
-            As a member of the TechLand team, you'll work on exciting projects that push the boundaries of what's possible with technology. You'll collaborate with a diverse group of individuals who share your passion for innovation and excellence. And you'll have access to resources and support that will help you develop your skills and achieve your career goals.
-            If you're ready to take your career to the next level, we invite you to join us at TechLand. Check out our current job openings and apply today.
+        TechLand is a rapidly growing technology company that creates innovative software solutions for businesses.
+        We have a team of skilled developers, designers, and project managers who collaborate to develop cutting-edge software.
+        At TechLand, we prioritize innovation, collaboration, and growth, and provide employees with ample resources to succeed.
+        We offer career advancement opportunities for professionals at all levels.
+        If you're interested in joining a team that pushes technological boundaries, check out our job openings and apply today.
       </p>
+        </div>
+        <div class="d-none d-md-block col-md-6">
+        <img src="/static/people.jpg" style="height: 320px; border-radius: 4px;">
+        </div>
+      </div>
       <h2 class="text-center mt-2 mb-4">Job Openings</h2>
       <div>
         {% for job in jobs %}
@@ -33,9 +41,9 @@
         {% endfor %}
       </div>
       <div class="text-center">
-        <button class="btn btn-primary btn-lg">Contact</button>
-          <p class="mt-4">Copyright 2022, TechLand</p>
+        <a class="btn btn-primary btn-lg" href="mailto:zarif.dragos@gmail.com?subject=Question%20about%20Job%20Openings&body=Name%3A%20%3Cinsert%20your%20name%20here%3E%0D%0A%0D%0AQuestions%3A%20%3Cinsert%20your%20questions%20here%3E">Contact</a>
       </div>
     </div>
+    {% include 'footer.html' %}
   </body>
 </html>

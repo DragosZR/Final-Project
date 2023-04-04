@@ -7,24 +7,25 @@ JOBS = [
         'id': 1,
         'title': 'Data Analyst',
         'location': 'Cluj-Napoca, Romania',
-        'salary': 'EUR 1700',
+        'salary': '7420 RON',
     },
     {
         'id': 2,
         'title': 'Front-End Engineer',
         'location': 'Cluj-Napoca, Romania',
-        'salary': 'EUR 1300'
+        'salary': '10100 RON'
     },
     {
         'id': 3,
         'title': 'Data Scientist',
         'location': 'Cluj-Napoca, Romania',
+        'salary': '4400 RON'
     },
     {
         'id': 4,
-        'title': 'Full-Stack Developer',
+        'title': 'Full-Stack Engineer',
         'location': 'Cluj-Napoca, Romania',
-        'salary': 'EUR 2000'
+        'salary': '7100 RON'
     }
 ]
 
